@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instructions - Diabetes Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='instruction.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="header">
+        <h1 id="welcome-text">Welcome, {{ username }}</h1>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="App Logo" id="app-logo">
+    </header>
+
+    <!-- Instruction Section -->
+    <section id="instruction-section">
+        <p>This app uses machine learning to predict whether a person is diabetic or non-diabetic based on health parameters.</p>
+        <p>Check your diabetes here.<br>on just a click...!</p>
+
+        <div id="steps">
+            <h3>Steps:</h3>
+            <ol>
+                <li>Enter all the details.</li>
+                <li>Click on <strong>Predict</strong>.</li>
+                <li>Get your result below!</li>
+            </ol>
+        </div>
+
+        <p>
+            <a id="learn-link" href="https://www.healthline.com/health/diabetes" target="_blank">
+                Learn about Diabetes
+            </a>
+        </p>
+    </section>
+
+    <!-- Let's Start Button -->
+<div id="start-button-container">
+    <form method="GET" action="/health_form">
+        <button type="submit" id="start-button">Let's Start</button>
+    </form>
+</div>
+
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <hr style="margin-top: 50px;" />
+        <div class="footer-text">
+            Made with ❤️ by Ankit Kumar &middot;
+            <a href="https://www.healthline.com/health/diabetes" target="_blank">
+                Everything You Need to Know About Diabetes
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>

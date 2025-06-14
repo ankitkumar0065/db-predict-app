@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <section id="result-container">
+        <h1 id="greeting">Hi {{ name }}, here is your result:</h1>
+        <p id="prediction-text">{{ prediction }}</p>
+        <a id="back-link" href="/health_form">← Go Back to Health Form</a>
+    <section>
+
+    <!-- Footer -->
+     <!--
+    <footer id="result-footer">
+        
+        <p>Thank YOu...!<br>Made with ❤️ by Ankit Kumar</p>
+        <div class="social-icons">
+            <div class="icon-block">
+                <img src="{{ url_for('static', filename='linkedin.png') }}" alt="LinkedIn Logo" class="icon">
+                <a href="https://www.linkedin.com/in/ankitkumar0065" target="_blank">LinkedIn</a>
+            </div>
+            <div class="icon-block">
+                <img src="{{ url_for('static', filename='github.png') }}" alt="GitHub Logo" class="icon">
+                <a href="https://github.com/ankitpal0065" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+    -->
+
+</body>
+</html>

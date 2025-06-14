@@ -1,0 +1,42 @@
+/* result.css */
+
+body {
+    background-color: #f0f9ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#result-container {
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    width: 500px;
+    text-align: center;
+}
+
+#greeting {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#prediction-text {
+    font-size: 24px;
+    color: #16a085;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#back-link {
+    text-decoration: none;
+    color: #2980b9;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+#back-link:hover {
+    color: #1c5980;
+}

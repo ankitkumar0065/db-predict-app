@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Health Information - Diabetes Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='health.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+    <div id="health-form-container">
+        <h1 id="form-title">Enter Your Health Information</h1>
+        <form method="POST" action="/predict" id="health-form">
+
+            <label for="pregnancies">Pregnancies:</label>
+            <input type="number" id="pregnancies" name="pregnancies" min="0" max="20" step="1" required><br>
+
+            <label for="glucose">Glucose Level:</label>
+            <input type="number" id="glucose" name="glucose" min="0" max="300" step="1" required><br>
+
+            <label for="bloodpressure">Blood Pressure:</label>
+            <input type="number" id="bloodpressure" name="bloodpressure" min="0" max="200" step="1" required><br>
+
+            <label for="skinthickness">Skin Thickness:</label>
+            <input type="number" id="skinthickness" name="skinthickness" min="0" max="100" step="1" required><br>
+
+            <label for="insulin">Insulin:</label>
+            <input type="number" id="insulin" name="insulin" min="0" max="900" step="1" required><br>
+
+            <label for="bmi">BMI:</label>
+            <input type="number" id="bmi" name="bmi" min="0" max="70" step="0.1" required><br>
+
+            <label for="dpf">Diabetes Pedigree Function:</label>
+            <input type="number" id="dpf" name="dpf" min="0.0" max="3.0" step="0.01" required><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="120" step="1" required><br>
+
+            <button type="submit" id="predict-button">Predict</button>
+        </form>
+    </div>
+
+</body>
+</html>
